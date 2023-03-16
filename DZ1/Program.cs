@@ -5,8 +5,6 @@
 // 1, -7, 567, 89, 223-> 3
 
 
-
-
 Console.WriteLine("Введите числа для проверки в одну строку через пробел: ");
 string[] input = Console.ReadLine().Split(" ");
 int[] array = Array.ConvertAll(input, s => int.Parse(s));
