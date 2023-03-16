@@ -43,8 +43,7 @@ string TenToTwo(int num)
 }
     return firstResult;
 }
-// 10011
+
 Console.WriteLine(TenToTwo(19));
 
 
-// Почему в выводе нет пробелов и что конкретно переварачивает вывод?
