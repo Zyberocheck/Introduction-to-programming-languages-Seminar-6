@@ -7,10 +7,6 @@
 // двух других сторон.
 
 
-
-//  Задача 42: Напишите программу, которая 
-// будет преобразовывать десятичное число в двоичное.
-
 // int Promt(string message)
 // {
 //   Console.WriteLine(message);
@@ -29,6 +25,26 @@
 
 
 
+//  Задача 42: Напишите программу, которая 
+// будет преобразовывать десятичное число в двоичное.
 
 
 
+string TenToTwo(int num)
+{
+    string firstResult= " ";
+    while(num>0)
+{
+    string result = Convert.ToString(num%2);
+    // result = result + firstResult;
+    // firstResult = result;
+    firstResult= result + firstResult;
+    num /= 2;
+}
+    return firstResult;
+}
+// 10011
+Console.WriteLine(TenToTwo(19));
+
+
+// Почему в выводе нет пробелов и что конкретно переварачивает вывод?
